@@ -1,0 +1,140 @@
+body {
+  font-family: sans-serif, "Roboto";
+  font-style: normal;
+}
+
+img {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.header__img--desk{
+  display: none;
+}
+
+.section__info {
+  display: grid;
+  place-content: center;
+  padding-left: 20px;
+}
+
+.section__header {
+  margin-bottom: -15px;
+}
+
+.section__h1 {
+  font-weight: 700;
+}
+
+.section__h4 {
+  font-weight: 400;
+  width: 95%;
+}
+
+.article {
+  display: grid;
+  place-content: center;
+}
+
+.article__ul {
+  margin-left: -10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.article__li {
+  list-style-image: url("./assets/images/icon-list.svg");
+}
+
+.article__p {
+  margin: 5px 8px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form__label {
+  font-weight: 700;
+  font-size: 14px;
+  font-style: bold;
+  color: hsl(235, 18%, 26%);
+}
+
+.form__input {
+  max-width: 85%;
+  padding: 8px 5px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid hsl(234, 29%, 20%) ;
+}
+
+.form__input:hover{
+  cursor: pointer;
+}
+
+.form__button {
+  max-width: 89%;
+  padding: 10px 8px;
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: 400;
+  font-style: bold;
+  border: none;
+}
+
+.form__button:hover{
+  background-color: hsl(4, 100%, 67%);
+  cursor: pointer;
+}
+
+.footer{
+  margin-top: 25px;
+}
+
+@media (min-width : 450px) {
+  .main{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 16px;
+    margin: 30px auto;
+    max-width: 90%;
+  }
+
+  body{
+    background-color:hsl(234, 29%, 20%) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img{
+    height: 400px;
+  }
+
+  .section__info{
+    padding: 20px;
+  }
+
+  .header__img{
+    display: none;
+  }
+
+  .header__img--desk{
+    display: block;
+  }
+
+  .article{
+    display: block;
+  }
+  
+}
